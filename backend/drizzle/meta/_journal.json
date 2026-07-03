@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1783076413589,
+      "tag": "0000_medical_tinkerer",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1783077585645,
+      "tag": "0001_lonely_husk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1783077637289,
+      "tag": "0002_add_vote_type_to_notes_vote",
+      "breakpoints": true
+    }
+  ]
+}
