@@ -4,6 +4,7 @@ import Notes from './pages/Notes'
 import Workspaces from './pages/Workspaces'
 import WorkspaceNotes from './pages/WorkspaceNotes'
 import NoteHistory from './pages/NoteHistory'
+import NoteForm from './pages/NoteForm'
 import { ProtectedRoute } from './routes/ProtectedRoute'
 
 function App() {
@@ -31,6 +32,22 @@ function App() {
         element={
           <ProtectedRoute>
             <WorkspaceNotes />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/workspaces/:workspaceId/notes/new"
+        element={
+          <ProtectedRoute>
+            <NoteForm />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/workspaces/:workspaceId/notes/:noteId/edit"
+        element={
+          <ProtectedRoute>
+            <NoteForm />
           </ProtectedRoute>
         }
       />

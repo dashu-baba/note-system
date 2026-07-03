@@ -12,19 +12,16 @@ export type LoginResponse = {
   user: User
 }
 
+export type NoteStatus = 'draft' | 'published'
+export type NoteType = 'public' | 'private'
+
 export type Note = {
   id: string
   title: string
   content: string | null
-  tags: unknown
+  status: NoteStatus
   upvotes: number
   downvotes: number
-  noteType: 'public' | 'private'
-  createdAt: string
-  updatedAt: string
-  creatorId: string
-  companyId: string
-  workspaceId: string
 }
 
 export type Workspace = {
